@@ -483,14 +483,14 @@ body {
 /* Opening Times Modal */
 
 #opening-times-section {
-  height: 60%;
-  width: 50%;
+  height: 80%;
+  width: 80%;
   display: none;
   align-items: center;
   justify-content: center;
   position: fixed;
-  top: 25%;
-  left: 25%;
+  top: 15%;
+  left: 10%;
   background-color: #333333;
   border-radius: 2.5%;
   border: 3px solid #000;
