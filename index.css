@@ -679,6 +679,7 @@ display: none;
 }
 
 .homepage-cta-heading h2 {
+  text-align: center;
   width: 70%;
 }
 
@@ -700,6 +701,7 @@ display: none;
 
 .find-us-heading {
   height: 20%;
+  text-align: center;
 }
 
 .find-us-map-box {
