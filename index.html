@@ -18,10 +18,10 @@
     <div class="header-content">
       <div class="logo-container">
         <a href="index.html" style="text-decoration: none">
-          La Passion - TBC
+          La Passion
         </a>
       </div>
-      <div id="header-list">
+      <div class="header-list">
         <ul>
           <li>
             <a href="treatments.html" style="text-decoration: none">Treatments</a>
@@ -34,8 +34,24 @@
           </li>
         </ul>
       </div>
+      <div class="hamburger-container">
+        <i id="hamburger" class="fas fa-bars fa-2x"></i>
+        <i id="close-menu" class="fas fa-times fa-2x"></i>
+      </div>
     </div>
-
+    <div id="header-dropdown">
+      <ul>
+        <li>
+          <a href="treatments.html" style="text-decoration: none">Treatments</a>
+        </li>
+        <li>
+          <a href="about-us.html" style="text-decoration: none">About Us</a>
+        </li>
+        <li>
+          <a href="contact-us.html" style="text-decoration: none">Contact Us</a>
+        </li>
+      </ul>
+    </div>
   </header>
 
   <!-- Social Nav Bar -->
@@ -233,6 +249,22 @@
 
 
   <script type="text/javascript">
+
+  // Hamburger //
+
+  $("#hamburger").click(function() {
+    $("#hamburger").addClass("disappear");
+    $("#close-menu").addClass("active");
+    $("#header-dropdown").slideToggle("show");
+  })
+
+  $("#close-menu").click(function() {
+    $("#hamburger").removeClass("disappear");
+    $("#close-menu").removeClass("active");
+    $("#header-dropdown").slideToggle("show");
+  })
+
+  // Opening Times Modal Toggle //
 
     $("#opening-times-button").click(function() {
       $("#opening-times-section").addClass("reveal");

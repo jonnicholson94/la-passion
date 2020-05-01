@@ -6,6 +6,8 @@ body {
   scroll-behavior: smooth;
 }
 
+/* Header */
+
 .universal-header {
   height: auto;
   width: 100%;
@@ -13,7 +15,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #120136;
+  background-color: #333333;
 }
 
 .header-content {
@@ -37,9 +39,7 @@ body {
   color: #fff;
 }
 
-
-
-#header-list {
+.header-list {
   height: 100%;
   width: 50%;
   display: flex;
@@ -48,7 +48,7 @@ body {
 }
 
 
-#header-list ul {
+.header-list ul {
   width: 70%;
   display: flex;
   align-items: center;
@@ -57,9 +57,53 @@ body {
   font-size: 16px;
 }
 
-#header-list ul li a {
+.header-list ul li a {
   color: #fff;
 }
+
+.hamburger-container {
+  width: 50%;
+  display: none;
+  align-items: center;
+  justify-content: flex-end;
+  color: #fff;
+
+}
+
+#hamburger {
+  display: none;
+}
+
+#close-menu {
+  display: none;
+  cursor: pointer;
+}
+
+#close-menu.active {
+  display: block;
+}
+
+#header-dropdown {
+  height: 100vh;
+  width: 100vw;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+#header-dropdown.show {
+  display: flex;
+}
+
+#header-dropdown ul li {
+  margin-top: 100px;
+  font-size: 24px;
+}
+
+#header-dropdown ul li a {
+  color: #fff;
+}
+
 
 /* Start of Social Nav Bar */
 
@@ -72,7 +116,7 @@ body {
   z-index: 1;
   align-items: center;
   justify-content: center;
-  background-color: #ff926b;
+  background-color: #706c61;
 }
 
 .nav-bar-container {
@@ -89,10 +133,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  color: #fff;
 }
 
 .call-us a {
-  color: #000;
+  color: #fff;
 }
 
 .social-links {
@@ -101,6 +146,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  color: #fff;
 }
 
 .fa-facebook-square {
@@ -117,6 +163,7 @@ body {
 
 #opening-times-button h4 {
   cursor: pointer;
+  color: #fff;
 
 }
 
@@ -124,7 +171,7 @@ body {
 /* Hero */
 
 .hero-section {
-  height: 100vh;
+  height: 110vh;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -156,15 +203,19 @@ body {
 
 .hero-content-text {
   position: absolute;
-  bottom: 15%;
+  bottom: 20%;
+  left: 20%;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  height: 35%;
+  width: 50%;
+  background-color: #ff1e56;
   color: #000;
 }
 
 .hero-content-text h1 {
-  font-size: 60px;
+  font-size: 50px;
   text-align: center;
 }
 
@@ -209,7 +260,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #120136;
+  background-color: #333333;
 }
 
 .more-info-text h2 {
@@ -312,7 +363,7 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   color: #fff;
   font-size: 24px;
-  background-color: #120136;
+  background-color: #333333;
 }
 
 .about-us-button {
@@ -322,8 +373,8 @@ body {
   align-items: center;
   justify-content: center;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  background-color: #ff926b;
-  color: #000;
+  background-color: #706c61;
+  color: #fff;
   font-size: 24px;
 }
 
@@ -356,6 +407,11 @@ body {
   justify-content: flex-start;
 }
 
+.find-us-heading h2 {
+  font-weight: 800;
+  font-size: 28px;
+}
+
 .find-us-map-box {
   height: 90%;
   width: 100%;
@@ -378,7 +434,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ff926b;
+  background-color: #706c61;
 }
 
 .footer-container {
@@ -399,10 +455,11 @@ body {
 
 .footer-content-1 h2 {
   font-weight: 800;
+  color: #fff;
 }
 
 .footer-content-1 a {
-  color: #000;
+  color: #fff;
 }
 
 .footer-content-2 {
@@ -415,10 +472,11 @@ body {
 
 .footer-content-2 h2 {
   font-weight: 800;
+  color: #fff;
 }
 
 .footer-content-2 a {
-  color: #000;
+  color: #fff;
 }
 
 
@@ -434,7 +492,7 @@ body {
   position: fixed;
   top: 25%;
   left: 25%;
-  background-color: #120136;
+  background-color: #333333;
   border-radius: 2.5%;
   border: 3px solid #000;
 }
@@ -500,22 +558,31 @@ body {
 
 /* Start of Header */
 
-  .logo-container {
-    width: 30%;
-  }
+.logo-container {
+  width: 50%;
+}
 
-  .logo-container a {
-    font-size: 16px;
-  }
+.logo-container a {
+  font-size: 20px;
+}
 
-  #header-list {
-    width: 80%;
-  }
+.header-list {
+display: none;
+}
 
-  #header-list a {
-    width: 33%;
-    font-size: 12px;
-  }
+.hamburger-container {
+display: flex;
+}
+
+#hamburger {
+display: block;
+cursor: pointer;
+}
+
+#hamburger.disappear {
+display: none;
+}
+
 
   /* Social Nav Bar */
 
@@ -556,13 +623,21 @@ body {
   width: 100%;
 }
 
+.hero-content-text {
+  width: 60%;
+}
+
 .hero-content-text h1 {
-  font-size: 32px;
+  font-size: 28px;
 }
 
 .hero-content-text h4 {
   font-size: 20px;
 }
+
+
+
+
 
 /* More Info */
 
@@ -604,7 +679,11 @@ body {
 
 
 .homepage-cta-heading {
-  font-size: 24px;
+  font-size: 22px;
+}
+
+.homepage-cta-heading h2 {
+  width: 70%;
 }
 
 .homepage-cta-buttons {
@@ -619,6 +698,16 @@ body {
 
 .about-us-button {
   width: 85%;
+}
+
+/* Maps */
+
+.find-us-heading {
+  height: 20%;
+}
+
+.find-us-map-box {
+  height: 70%;
 }
 
 /* Footer */
