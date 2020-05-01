@@ -89,6 +89,7 @@ body {
   display: none;
   align-items: center;
   justify-content: center;
+
 }
 
 #header-dropdown.show {
@@ -98,6 +99,7 @@ body {
 #header-dropdown ul li {
   margin-top: 100px;
   font-size: 24px;
+  list-style: none;
 }
 
 #header-dropdown ul li a {
@@ -204,14 +206,11 @@ body {
 .hero-content-text {
   position: absolute;
   bottom: 20%;
-  left: 20%;
   display: flex;
+  font-weight: 2000;
   justify-content: center;
   flex-direction: column;
-  height: 35%;
-  width: 50%;
-  background-color: #ff1e56;
-  color: #000;
+  color: #fff;
 }
 
 .hero-content-text h1 {
@@ -623,9 +622,6 @@ display: none;
   width: 100%;
 }
 
-.hero-content-text {
-  width: 60%;
-}
 
 .hero-content-text h1 {
   font-size: 28px;
@@ -727,6 +723,8 @@ display: none;
 /* Opening Times */
 
 #opening-times-section {
+  height: 90vw;
+  top: 10vw;
   width: 80vw;
   left: 10vw;
 }
