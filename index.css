@@ -724,15 +724,8 @@ display: none;
 
 /* Opening Times */
 
-#opening-times-section {
-  height: 90vw;
-  top: 10vw;
-  width: 80vw;
-  left: 10vw;
-}
-
 .opening-times-content {
-  width: 80%;
+  width: 90%;
 }
 
 .opening-times {
