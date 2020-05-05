@@ -223,7 +223,7 @@ body {
 
 .services-list ul li {
   list-style: none;
-  margin: 10px;
+  margin: 3px;
   font-size: 18px;
 }
 
@@ -482,7 +482,7 @@ display: none;
 /* Treatments */
 
 .treatments-section {
-  height: 130vh;
+  height: 150vh;
 }
 
 .treatments-boxes {
