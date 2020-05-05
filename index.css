@@ -545,8 +545,8 @@ body {
 
 #opening-times-close {
   position: absolute;
-  right: 10px;
-  top: 5px;
+  right: 20px;
+  top: 20px;
   cursor: pointer;
   color: #fff;
 }

@@ -221,7 +221,12 @@ body {
   font-size: 32px;
 }
 
+.services-list ul {
+  width: 60%;
+}
+
 .services-list ul li {
+  width: 90%;
   list-style: none;
   margin: 3px;
   font-size: 18px;
@@ -242,9 +247,13 @@ body {
   font-size: 32px;
 }
 
+.treatments-list ul {
+  width: 60%;
+}
+
 .treatments-list ul li {
   list-style: none;
-  margin: 10px;
+  margin-top: 10px;
   font-size: 18px;
 }
 
@@ -417,8 +426,8 @@ body {
 
 #opening-times-close {
   position: absolute;
-  right: 10px;
-  top: 5px;
+  right: 20px;
+  top: 20px;
   cursor: pointer;
   color: #fff;
 }
