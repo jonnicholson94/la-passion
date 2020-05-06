@@ -622,3 +622,48 @@ display: none;
 
 
 }
+
+@media only screen and (max-width: 400px) {
+
+.call-us a {
+  font-size: 8px;
+}
+
+.opening-times-button h4 {
+  font-size: 8px;
+}
+
+
+.about-us-text-box h2 {
+  font-size: 14px;
+}
+
+.about-us-text-box p {
+  font-size: 10px;
+}
+
+.profile-heading h1 {
+  font-size: 20px;
+}
+
+.personal-profile p {
+  font-size: 10px;
+}
+
+.find-us-heading h2 {
+  font-size: 14px;
+}
+
+.opening-times-content h2 {
+  font-size: 12px;
+}
+
+.opening-times-day h4 {
+  font-size: 8px;
+}
+
+.opening-times-times h4 {
+  font-size: 8px;
+}
+
+}

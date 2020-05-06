@@ -567,3 +567,51 @@ display: none;
 
 
 }
+
+@media only screen and (max-width: 400px) {
+
+.call-us a {
+  font-size: 8px;
+}
+
+.opening-times-button h4 {
+  font-size: 8px;
+}
+
+.treatments-heading h1 {
+  font-size: 16px;
+}
+
+.services-list h2 {
+  font-size: 12px;
+}
+
+.services-list ul li {
+  font-size: 8px;
+}
+
+.treatments-list h2 {
+  font-size: 12px;
+}
+
+.treatments-list ul li {
+  font-size: 8px;
+}
+
+.find-us-heading h2 {
+  font-size: 12px;
+}
+
+.opening-times-content h2 {
+  font-size: 12px;
+}
+
+.opening-times-day h4 {
+  font-size: 8px;
+}
+
+.opening-times-times h4 {
+  font-size: 8px;
+}
+
+}
