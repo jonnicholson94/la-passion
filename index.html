@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/393f243e6d.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Manrope&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
   <title>La Passion Hairdressing</title>
 </head>
 
@@ -32,6 +33,9 @@
           <li>
             <a href="contact-us.html" style="text-decoration: none">Contact Us</a>
           </li>
+          <li>
+            <a href="gallery.html" style="text-decoration: none">Gallery</a>
+          </li>
         </ul>
       </div>
       <div class="hamburger-container">
@@ -50,6 +54,9 @@
         <li>
           <a href="contact-us.html" style="text-decoration: none">Contact Us</a>
         </li>
+        <li>
+          <a href="gallery.html" style="text-decoration: none">Gallery</a>
+        </li>
       </ul>
     </div>
   </header>
@@ -63,7 +70,7 @@
         <h4>
           <a href="tel:+01132632673" style="text-decoration: none">
             <strong>
-              Call us: 0113 263 2673
+              0113 263 2673
             </strong>
           </a>
         </h4>
@@ -78,7 +85,7 @@
         </a>
       </div>
       <div id="opening-times-button">
-        <h4>View Our Opening Times</h4>
+        <h4>Opening Times</h4>
       </div>
     </div>
   </nav>
@@ -110,19 +117,15 @@
         <p>La Passion Hair Salon is a place created specifically for people who wish for utter beauty. Our guests can always count on professional support, advice and assistance from us. We'll do everything that is needed for you to fully relax and have a great time.</p>
         </div>
       </div>
-      <div class="more-info-slideshow">
-        <img class="slideshow-img" src="style-2.jpg" alt="">
-        <img class="slideshow-img" src="style-1.jpg" alt="">
-        <img class="slideshow-img" src="style-3.jpg" alt="">
-        <img class="slideshow-img" src="style-4.jpg" alt="">
-        <img class="slideshow-img" src="style-5.jpg" alt="">
-        <img class="slideshow-img" src="style-6.jpg" alt="">
-        <img class="slideshow-img" src="style-7.jpg" alt="">
-        <img class="slideshow-img" src="style-8.jpg" alt="">
-      <div class="plus-container">
-        <i class="fas fa-chevron-circle-left fa-2x" onclick="plusSlides(-1)"></i>
-        <i class="fas fa-chevron-circle-right fa-2x" onclick="plusSlides(+1)"></i>
-      </div>
+      <div class="more-info-cta">
+        <div class="more-info-cta-heading">
+        <h2>Want to see our work? Click to browse our gallery.</h2>
+        </div>
+        <div class="more-info-cta-button">
+        <button class="gallery-button" type="button" name="button">
+          <a href="gallery.html" style="text-decoration: none">Our Gallery</a>
+        </button>
+        </div>
       </div>
     </div>
   </section>
@@ -166,10 +169,11 @@
         <a href="treatments.html" style="text-decoration: none">Treatments</a>
         <a href="about-us.html" style="text-decoration: none">About Us</a>
         <a href="contact-us.html" style="text-decoration: none">Contact Us</a>
+        <a href="gallery.html" style="text-decoration: none">Gallery</a>
       </div>
       <div class="footer-content-2">
         <h2>Our details:</h2>
-        <a href="#" style="text-decoration: none"><strong>Telephone number: 012345678910</strong></a>
+        <a href="tel:+01132632673" style="text-decoration: none"><strong>Telephone number: 0113 263 2673</strong></a>
         <a href="https://www.facebook.com/lapassionhair/" style="text-decoration: none"><strong>Our Facebook</strong></a>
         <a href="#" style="text-decoration: none"><strong>Our Address:</strong></br>73 Town Street</br>Armley</br>Leeds</br>LS12 3HD</a>
       </div>
@@ -276,30 +280,6 @@
     $("#opening-times-close").click(function() {
       $("#opening-times-section").removeClass("reveal");
     })
-
-    // Slideshow content //
-
-    var slideIndex = 1;
-    showDivs(slideIndex);
-
-    function plusSlides(n) {
-      showDivs(slideIndex += n);
-    }
-
-    function showDivs(n) {
-      var i;
-      var x = document.getElementsByClassName("slideshow-img");
-      if (n > x.length) {
-        slideIndex = 1
-      }
-      if (n < 1) {
-        slideIndex = x.length
-      }
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      x[slideIndex - 1].style.display = "block";
-    }
 
 
 

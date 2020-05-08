@@ -167,18 +167,18 @@ body {
   color: #fff;
 }
 
-/* Treatments prices */
+/* Start of Slideshow */
 
-.treatments-section {
-  height: 80vh;
-  width: 100%;
+.image-slideshow-section {
+  height: 100vh;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.treatments-container {
-  height: 90%;
+.image-slideshow-container {
+  height: 100%;
   width: 90%;
   display: flex;
   align-items: center;
@@ -186,78 +186,30 @@ body {
   flex-direction: column;
 }
 
-.treatments-heading {
-  height: 20%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.treatments-heading h1 {
-  font-size: 38px;
-}
-
-.treatments-boxes {
-  height: 80%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.services-list {
+.more-info-slideshow {
   height: 100%;
-  width: 45%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: #333333;
-  color: #fff;
-}
-
-.services-list h2 {
-  font-size: 32px;
-}
-
-.services-list ul {
-  width: 60%;
-}
-
-.services-list ul li {
   width: 90%;
-  list-style: none;
-  margin: 3px;
-  font-size: 18px;
-}
-
-.treatments-list {
-  height: 100%;
-  width: 45%;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  background-color: #706c61;
-  color: #fff;
 }
 
-.treatments-list h2 {
-  font-size: 32px;
+.slideshow-img {
+  height: 100%;
+  width: 80%;
 }
 
-.treatments-list ul {
-  width: 60%;
+.fa-chevron-circle-left {
+  position: absolute;
+  left: 15px;
+  cursor: pointer;
 }
 
-.treatments-list ul li {
-  list-style: none;
-  margin-top: 10px;
-  font-size: 18px;
+.fa-chevron-circle-right {
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
 }
-
-
 
 /* Find Us Section */
 
@@ -304,6 +256,9 @@ body {
   height: 80%;
   width: 80%;
 }
+
+
+
 
 
 /* Footer */
@@ -488,44 +443,10 @@ display: none;
   font-size: 14px;
 }
 
-/* Treatments */
+/* Slideshow */
 
-.treatments-section {
-  height: 150vh;
-}
-
-.treatments-boxes {
-  flex-wrap: wrap;
-}
-
-.services-list {
-  height: 50vh;
-  width: 90%;
-  flex: 0 0 350px;
-}
-
-.services-list h2 {
-  font-size: 24px;
-}
-
-.services-list ul li {
-  font-size: 16px;
-  margin: 5px;
-}
-
-.treatments-list {
-  height: 50vh;
-  width: 90%;
-  flex: 0 0 350px;
-}
-
-.treatments-list h2 {
-  font-size: 24px;
-}
-
-.treatments-list ul li {
-  font-size: 16px;
-  margin: 5px;
+.slideshow-img {
+  width: 80%;
 }
 
 
@@ -566,6 +487,8 @@ display: none;
 }
 
 
+
+
 }
 
 @media only screen and (max-width: 400px) {
@@ -576,30 +499,6 @@ display: none;
 
 .opening-times-button h4 {
   font-size: 8px;
-}
-
-.treatments-heading h1 {
-  font-size: 16px;
-}
-
-.services-list h2 {
-  font-size: 12px;
-}
-
-.services-list ul li {
-  font-size: 8px;
-}
-
-.treatments-list h2 {
-  font-size: 12px;
-}
-
-.treatments-list ul li {
-  font-size: 8px;
-}
-
-.find-us-heading h2 {
-  font-size: 12px;
 }
 
 .opening-times-content h2 {

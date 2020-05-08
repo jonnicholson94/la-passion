@@ -1,7 +1,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Courgette', sans-serif;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -131,7 +131,7 @@ body {
 
 .call-us {
   height: 100%;
-  width: 20%;
+  width: 13%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -157,7 +157,7 @@ body {
 
 #opening-times-button {
   height: 100%;
-  width: 20%;
+  width: 13%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -281,39 +281,53 @@ body {
   width: 90%;
 }
 
-.more-info-slideshow {
+.more-info-cta {
   height: 90%;
   width: 45%;
   display: flex;
-  justify-content: center;
   align-items: center;
-  overflow: none;
+  justify-content: center;
   flex-direction: column;
-}
-
-.slideshow-img {
-  width: 90%;
-  height: 90%;
-  display: none;
-}
-
-.plus-container {
-  height: 7.5%;
-  width: 90%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.fa-chevron-circle-right {
-  cursor: pointer;
-  margin-left: 10px;
+.more-info-cta-heading {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #706c61;
+  color: #fff;
 }
 
-.fa-chevron-circle-left {
-  cursor: pointer;
+.more-info-cta-button {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.gallery-button {
+  height: 33%;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  font-size: 24px;
+  background-color: #333333;
+}
+
+.gallery-button a {
+  height: 100%;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Courgette';
+}
+
+
 
 /* Homepage CTA Section */
 
@@ -631,9 +645,6 @@ display: none;
 }
 
 
-
-
-
 /* More Info */
 
 .more-info-section {
@@ -657,18 +668,17 @@ display: none;
   font-size: 14px;
 }
 
-.more-info-slideshow {
-  height: 55%;
-  width: 85%;
+.more-info-cta {
+  flex: 0 0 400px;
+  height: 350px;
 }
 
-.slideshow-img {
-  height: 80%;
+.more-info-cta h2 {
+  font-size: 20px;
+  text-align: center;
 }
 
-.plus-container {
-  height: 12.5%;
-}
+
 
 /* Homepage CTA */
 
@@ -758,6 +768,14 @@ display: none;
 
 .more-info-paragraph p {
   font-size: 10px;
+}
+
+.more-info-cta-heading h2 {
+  font-size: 14px;
+}
+
+.gallery-button {
+  font-size: 12px;
 }
 
 .homepage-cta-heading h2 {

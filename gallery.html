@@ -6,8 +6,8 @@
     <link href="https://fonts.googleapis.com/css?family=Manrope&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="treatments.css">
-    <title>Our Treatments</title>
+    <link rel="stylesheet" href="gallery.css">
+    <title>Gallery</title>
   </head>
   <body>
 
@@ -82,77 +82,31 @@
           </a>
         </div>
         <div id="opening-times-button">
-          <h4>Opening Times</h4>
+        <h4>Opening Times</h4>
         </div>
       </div>
     </nav>
 
+    <!-- Start of Image Slideshow -->
 
-
-<!-- Treatments section -->
-
-<section class="treatments-section">
-  <div class="treatments-container">
-    <div class="treatments-heading">
-      <h1>Our prices</h1>
-    </div>
-    <div class="treatments-boxes">
-    <div class="services-list">
-      <h2>Regular services:</h2>
-    <ul>
-      <li>
-        Gents from £7
-      </li>
-      <li>
-        Ladies from £15
-      </li>
-      <li>
-        Wash, cut and blow-dry from £23
-      </li>
-      <li>
-        Blow-dry from £15
-      </li>
-      <li>
-        Hair up from £20
-      </li>
-      <li>
-        Full head colour from £40
-      </li>
-      <li>
-        Highlights from £50
-      </li>
-      <li>
-        Ombre / Dip-dye from £40
-      </li>
-      <li>
-        Perm from £40
-      </li>
-
-    </ul>
-    </div>
-    <div class="treatments-list">
-      <h2>Something special:</h2>
-      <ul>
-        <li>
-          Olaplex from £20
-        </li>
-        <li>
-          Hair Botox from £40
-        </li>
-        <li>
-          Keratin Treatment from £50
-        </li>
-        <li>
-          Hair mask from £15
-        </li>
-        <li>
-          Sombre from £60
-        </li>
-      </ul>
-    </div>
-    </div>
-  </div>
-</section>
+    <section class="image-slideshow-section">
+      <div class="image-slideshow-container">
+        <div class="more-info-slideshow">
+          <img class="slideshow-img" src="style-2.jpg" alt="">
+          <img class="slideshow-img" src="style-1.jpg" alt="">
+          <img class="slideshow-img" src="style-3.jpg" alt="">
+          <img class="slideshow-img" src="style-4.jpg" alt="">
+          <img class="slideshow-img" src="style-5.jpg" alt="">
+          <img class="slideshow-img" src="style-6.jpg" alt="">
+          <img class="slideshow-img" src="style-7.jpg" alt="">
+          <img class="slideshow-img" src="style-8.jpg" alt="">
+        <div class="plus-container">
+          <i class="fas fa-chevron-circle-left fa-2x" onclick="plusSlides(-1)"></i>
+          <i class="fas fa-chevron-circle-right fa-2x" onclick="plusSlides(+1)"></i>
+        </div>
+        </div>
+      </div>
+    </section>
 
 
     <!-- Find Us section -->
@@ -265,6 +219,7 @@
 
 
     <script type="text/javascript">
+
       // Hamburger //
 
       $("#hamburger").click(function() {
@@ -289,6 +244,34 @@
         $("#opening-times-section").removeClass("reveal");
       })
 
-</script>
+      // Slideshow //
+
+      // Slideshow content //
+
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusSlides(n) {
+        showDivs(slideIndex += n);
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("slideshow-img");
+        if (n > x.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = x.length
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+      }
+
+
+  </script>
+
   </body>
 </html>
