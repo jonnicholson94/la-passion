@@ -1,0 +1,90 @@
+/* Start of Social Nav Bar */
+
+.social-nav-bar {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  align-items: center;
+  justify-content: center;
+  background-color: #706c61;
+}
+
+.nav-bar-container {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.call-us {
+  height: 100%;
+  width: 13%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+}
+
+.call-us a {
+  color: #fff;
+}
+
+.social-links {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+}
+
+.fa-facebook-square {
+  cursor: pointer;
+}
+
+#opening-times-button {
+  height: 100%;
+  width: 13%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#opening-times-button h4 {
+  cursor: pointer;
+  color: #fff;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+
+/* Social Nav Bar */
+
+.call-us {
+  width: 40%;
+  font-size: 14px;
+}
+
+  .call-us .fa-phone-alt {
+    display: none;
+  }
+
+  .social-links {
+    width: 20%;
+  }
+
+  .social-links h4 {
+    display: none;
+  }
+
+#opening-times-button {
+  width: 40%;
+  font-size: 14px;
+}
+
+}

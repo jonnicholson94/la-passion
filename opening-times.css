@@ -1,0 +1,110 @@
+/* Opening Times Modal */
+
+#opening-times-section {
+  height: 80%;
+  width: 80%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 15%;
+  left: 10%;
+  background-color: #333333;
+  border-radius: 2.5%;
+  border: 3px solid #000;
+  z-index: 99;
+}
+
+#opening-times-section.reveal {
+  display: flex;
+}
+
+.opening-times-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.opening-times-content {
+  height: 90%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.opening-times {
+  height: 7.5%;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+}
+
+.opening-times-day {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.opening-times-times {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#opening-times-close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  color: #fff;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+/* Opening Times */
+
+.opening-times-content {
+  width: 90%;
+}
+
+.opening-times {
+  width: 90%;
+  font-size: 10px;
+}
+
+}
+
+
+@media only screen and (max-width: 400px) {
+
+.call-us a {
+  font-size: 8px;
+}
+
+.opening-times-button h4 {
+  font-size: 8px;
+}
+
+.opening-times-content h2 {
+  font-size: 12px;
+}
+
+.opening-times-day h4 {
+  font-size: 8px;
+}
+
+.opening-times-times h4 {
+  font-size: 8px;
+}
