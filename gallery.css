@@ -84,3 +84,10 @@ body {
 }
 
 }
+
+@media only screen and (max-width: 400px) {
+
+  .image-heading {
+    font-size: 12px;
+  }
+}

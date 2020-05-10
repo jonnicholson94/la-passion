@@ -221,21 +221,53 @@ body {
 
 @media only screen and (max-width: 400px) {
 
+  /* About Us */
 
-.about-us-text-box h2 {
+  .about-us-container {
+    flex-wrap: wrap;
+  }
+
+  .about-us-text-box {
+    wrap: 0 0 300px;
+  }
+
+  .about-us-text-box h2 {
+    font-size: 12px;
+  }
+
+  .about-us-text-box p {
+    font-size: 8px;
+  }
+
+  /* Meet the team */
+
+  .personal-profile-section {
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .profiles-container {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90%;
+  }
+
+  .personal-profile h2 {
+    height: 15%;
+  }
+
+  .personal-profile p {
+    height: 25%;
+  }
+
+
+.profile-heading h1 {
   font-size: 14px;
 }
 
-.about-us-text-box p {
-  font-size: 10px;
-}
-
-.profile-heading h1 {
-  font-size: 20px;
-}
-
 .personal-profile p {
-  font-size: 10px;
+  font-size: 9px;
 }
 
 }

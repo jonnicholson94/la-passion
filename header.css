@@ -129,3 +129,10 @@ display: none;
 }
 
 }
+
+@media only screen and (max-width: 400px) {
+
+  .logo-container a {
+    font-size: 16px;
+  }
+}

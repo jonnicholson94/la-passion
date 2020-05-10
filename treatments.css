@@ -103,7 +103,7 @@ body {
 /* Treatments */
 
 .treatments-section {
-  height: 150vh;
+  height: auto;
 }
 
 .treatments-boxes {
@@ -111,9 +111,11 @@ body {
 }
 
 .services-list {
-  height: 50vh;
+  height: 80vh;
   width: 90%;
   flex: 0 0 350px;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 .services-list h2 {
@@ -121,7 +123,8 @@ body {
 }
 
 .services-list ul li {
-  font-size: 16px;
+  width: 90%;
+  font-size: 18px;
   margin: 5px;
 }
 
@@ -136,7 +139,7 @@ body {
 }
 
 .treatments-list ul li {
-  font-size: 16px;
+  font-size: 20px;
   margin: 5px;
 }
 
