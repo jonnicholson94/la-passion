@@ -1,0 +1,172 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Courgette', sans-serif;
+}
+
+/* Treatments prices */
+
+.treatments-section {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.treatments-container {
+  height: 90%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.treatments-heading {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.treatments-heading h1 {
+  font-size: 38px;
+}
+
+.treatments-boxes {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.services-list {
+  height: 100%;
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #333333;
+  color: #fff;
+}
+
+.services-list h2 {
+  font-size: 32px;
+}
+
+.services-list ul {
+  width: 60%;
+}
+
+.services-list ul li {
+  width: 90%;
+  list-style: none;
+  margin: 3px;
+  font-size: 18px;
+}
+
+.treatments-list {
+  height: 100%;
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #706c61;
+  color: #fff;
+}
+
+.treatments-list h2 {
+  font-size: 32px;
+}
+
+.treatments-list ul {
+  width: 60%;
+}
+
+.treatments-list ul li {
+  list-style: none;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+
+/* Treatments */
+
+.treatments-section {
+  height: auto;
+}
+
+.treatments-boxes {
+  flex-wrap: wrap;
+}
+
+.services-list {
+  height: 80vh;
+  width: 90%;
+  flex: 0 0 350px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.services-list h2 {
+  font-size: 24px;
+}
+
+.services-list ul li {
+  width: 90%;
+  font-size: 18px;
+  margin: 5px;
+}
+
+.treatments-list {
+  height: 50vh;
+  width: 90%;
+  flex: 0 0 350px;
+}
+
+.treatments-list h2 {
+  font-size: 24px;
+}
+
+.treatments-list ul li {
+  font-size: 20px;
+  margin: 5px;
+}
+
+}
+
+@media only screen and (max-width: 400px) {
+
+
+.treatments-heading h1 {
+  font-size: 16px;
+}
+
+.services-list h2 {
+  font-size: 12px;
+}
+
+.services-list ul li {
+  font-size: 8px;
+}
+
+.treatments-list h2 {
+  font-size: 12px;
+}
+
+.treatments-list ul li {
+  font-size: 8px;
+}
+
+
+}

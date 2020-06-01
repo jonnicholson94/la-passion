@@ -1,0 +1,105 @@
+/* Start of Social Nav Bar */
+
+.social-nav-bar {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  align-items: center;
+  justify-content: center;
+  background-color: #706c61;
+}
+
+.nav-bar-container {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.call-us {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+  margin: 5px;
+  text-align: center;
+}
+
+.call-us a {
+  color: #fff;
+  font-size: 18px;
+}
+
+.social-links {
+  height: 100%;
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+}
+
+.fa-facebook-square {
+  cursor: pointer;
+}
+
+#opening-times-button {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#opening-times-button h4 {
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+
+/* Social Nav Bar */
+
+.call-us {
+  width: 50%;
+}
+
+.call-us a {
+  font-size: 16px;
+}
+
+.social-links {
+  width: 20%;
+}
+
+#opening-times-button {
+  width: 30%;
+}
+
+#opening-times-button h4 {
+  font-size: 16px;
+}
+
+}
+
+
+@media only screen and (max-width: 400px) {
+
+  .call-us a {
+    font-size: 14px;
+  }
+
+  #opening-times-button h4 {
+    font-size: 14px;
+  }
+}
